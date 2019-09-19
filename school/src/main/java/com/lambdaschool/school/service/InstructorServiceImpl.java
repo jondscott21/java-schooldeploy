@@ -14,6 +14,13 @@ public class InstructorServiceImpl implements InstructorService
     private InstructorRepository instructrepos;
 
     @Override
+    public Instructor findInstructorById(long id)
+    {
+        return instructrepos.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException(Long.toString(id)));
+    }
+
+    @Override
     public Instructor save(Instructor instructor)
     {
         return instructrepos.save(instructor);
