@@ -39,6 +39,7 @@ com\lambdaschool\school\controller\RolesController.class
 com\lambdaschool\school\model\Useremail.class
 com\lambdaschool\school\repository\InstructorRepository.class
 com\lambdaschool\school\service\UserAuditing.class
+com\lambdaschool\school\SeedData.class
 com\lambdaschool\school\model\Course.class
 com\lambdaschool\school\model\Instructor.class
 com\lambdaschool\school\model\UserRoles.class

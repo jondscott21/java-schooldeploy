@@ -1,0 +1,26 @@
+### login for token
+$ curl -X POST --user "lambda-client:lambda-secret" -d "grant_type=password&username=admin&password=password" http://jondscott21-deployschool.herokuapp.com/login
+
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" -d "{\"coursename\": \"Python\", \"instuctor\":{\"instructid\":3,\"instructname\":\"Charlie\"}}"  http://jondscott21-deployschool.herokuapp.com/courses/course/add
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" http://jondscott21-deployschool.herokuapp.com/courses/courses
+
+curl -X DELETE -H "Accept: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" http://jondscott21-deployschool.herokuapp.com/courses/courses/1
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" http://jondscott21-deployschool.herokuapp.com/courses/courses/pagable
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" http://jondscott21-deployschool.herokuapp.com/courses/studcount
+
+
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" -d "{\"studname\": \"Bobby\"}"  http://jondscott21-deployschool.herokuapp.com/students/student
+
+curl -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" -d "{\"studname\": \"Fred\"}"  http://jondscott21-deployschool.herokuapp.com/students/Student/1
+
+curl -X DELETE -H "Content-Type: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" http://jondscott21-deployschool.herokuapp.com/students/Student/1
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" http://jondscott21-deployschool.herokuapp.com/students/Student/1
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" http://jondscott21-deployschool.herokuapp.com/students/student/namelike/
+
+curl -X GET -H "Accept: application/json" -H "Authorization: Bearer b644acea-e462-4247-8c0b-5e0dd5e8c05f" http://jondscott21-deployschool.herokuapp.com/students/students
+
